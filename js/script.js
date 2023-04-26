@@ -3,11 +3,12 @@ const closeModalButton = document.querySelector("#close-modal")
 const modal = document.querySelector("#modal")
 const fade = document.querySelector("#fade")
 
+const toggleModal = () => {
+  const modFade = [modal, fade]
+  modFade.forEach((el) => el.classList.toggle('hide'))
+}
 
-
-const janela = [openModalButton, closeModalButton, fade]
-janela.forEach((el) => {
-  el.addEventListener("click", () => console.log("teste"))
+const modall = [openModalButton, closeModalButton, fade]
+modall.forEach((el) => {
+  el.addEventListener("click", () => toggleModal())
 });
-
-   
