@@ -4,8 +4,12 @@ const modal = document.querySelector("#modal")
 const fade = document.querySelector("#fade")
 
 const toggleModal = () => {
-  const modFade = [modal, fade]
+  /* const modFade = [modal, fade]
   modFade.forEach((el) => el.classList.toggle('hide'))
+  */
+
+  modal.classList.toggle('hide')
+  fade.classList.toggle('hide')
 }
 
 const modall = [openModalButton, closeModalButton, fade]
